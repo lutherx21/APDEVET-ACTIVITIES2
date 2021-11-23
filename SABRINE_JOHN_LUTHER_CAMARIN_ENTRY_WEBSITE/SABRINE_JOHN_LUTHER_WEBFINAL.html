@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Index </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+		
+	</head>
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-family: consolas;
+			color: black;
+		}
+
+		/* Header */
+		.header {
+			min-height: 50vh;
+			width: 100%;
+			/* background-image: url(header.jpg); */
+			background-position: center;
+			background-size: cover;
+			position: relative;
+		}
+
+		nav {
+			display: flex;
+			padding: 2%;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav img {
+			width: 100px;
+			border-radius: 50%;
+			
+		}
+
+		.nav-links {
+			flex: 1;
+			text-align: left;
+
+		}
+
+		.nav-links ul li {
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+			position: relative;
+		}
+
+		.nav-links ul li a {
+			font-family: 'Poppins', sans-serif;
+			color: black;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.text-box {
+			/* width: 90%; */
+			text-align: center;
+			margin-top: 8%;
+			position: relative;
+		}
+
+		.text-box h1 {
+			font-size: 70px;
+			color: 	black;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.text-box p {
+			margin:10px 0 40px;
+			font-size: 16px;
+			color: black;
+		}
+
+		/* Preview */
+		.preview {
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		h1 {
+			font-size: 36px;
+			font-weight: 600;
+			color: black;
+		}
+
+		p {
+			color: #662F08;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 22px;
+			padding: 10px;
+		}
+
+		.row {
+			margin-top: 5%;
+			display: flex;
+			justify-content: space-between;
+			 
+		}
+
+		.preview {
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			padding: 50px;
+		}
+
+		.preview-col {
+			flex-basis: 32%;
+			border-radius: 10px;
+			margin-bottom: 30px;
+			position: relative;
+			overflow: hidden;
+			background:rgba(255, 255, 255, .4);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+		}
+
+		.preview-col img {
+			border-radius: 10px;
+			padding: 10px;
+			width: 60%;
+		}
+
+		.preview-col h3 {
+			margin-top: 10px;
+		}
+
+		.preview-col p {
+			text-align: left;
+			font-size: 16px;
+		}
+
+		/* About us */
+		.about-us {
+			background:rgba(255, 255, 255, .4);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+			padding: 20px;
+			text-align: center;
+		}
+
+		.about-us h1 {
+			text-align: center;
+		}
+
+		.about-us p {
+			font-size: 14px;
+			text-align: left;
+		}
+
+		.about-btn {
+			display: inline-block;
+			text-decoration: none;
+			color: black;
+			border: 1px solid black;
+			padding: 12px 34px;
+			font-size: 13px;
+			background: transparent;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.about-btn:hover {
+			border: 1px solid black;
+			transition: 1s;
+			/* color: #ffffff; */
+		}
+
+
+		/* Contact Us */
+		.contact-us {
+			margin:100px auto;
+			width: 80%;
+			background-image: url(cta.jpg);
+			opacity: 0.7;
+			background-position:center;
+			background-size: cover;
+			border-radius: 10px;
+			text-align: center;
+			padding: 100px 0;
+		}
+
+		.contact-us h1 {
+			color: #ffffff;
+		}
+
+		.contact-btn {
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			border: 1px solid #ffffff;
+			padding: 12px 34px;
+			font-size: 13px;
+			background: transparent;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.contact-btn:hover {
+			border: 1px solid black;
+			background: #865639;
+			transition: 1s;
+			color: #ffffff;
+		}
+
+		.preview-col{
+			transition: 1s ;
+		}
+
+		.preview-col:hover{
+			transform: scale(1.3);
+			cursor: pointer;
+
+		}
+
+		.footer {
+ 		 font-family: Courier;
+ 		 font-size: 10px;
+  		 padding: 0px;
+ 		 text-align: center;
+		 background:rgba(255, 255, 255, .4);
+         box-shadow: 0 15px 20px rgba(0, 0, 0, .2);
+  		 margin-top: 2px;
+		 font-family: consolas;
+		 }
+
+		 .footer h2{
+			 font-size: 16px;
+		 }
+
+		 .header{
+			 font-family: consolas;
+		 }
+
+		 
+	</style>
+	<body>
+
+		
+
+		<section class="header">
+			<nav>
+				<a href="SABRINE_JOHN_LUTHER_WEBFINAL.html"> <img src="logo2.png"> </a>
+				<div class="nav-links">
+					<ul>
+						<li> <a href="SABRINE_JOHN_LUTHER_WEBFINAL.html"> HOME </a> </li>
+						<li> <a href="about.html"> ABOUT </a> </li>
+						<li> <a href="contact.html"> CONTACT US </a> </li>
+						<li> <a href="support.html"> SUPPORT </a> </li>
+					</ul>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="text-box">
+				<h1> TECHCHOP.COM</h1>
+				
+			
+			</div>
+		
+			
+		<section class="preview">
+			<h1>DEVICES</h1>
+			
+
+			<div class="row">
+				<div class="preview-col">
+					<img src="1.jpg">
+					<h3> MACBOOK</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="2.jpg">
+					<h3> HEADSET </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="3.jpg">
+					<h3>DESKTOP PC</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+
+			
+
+			
+		</section>
+			
+
+			
+
+		</section>
+
+	
+
+		<section class="preview">
+		
+			<div class="row">
+				<div class="preview-col">
+					<img src="4.jpg">
+					<h3> ARMY HEADSET</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="5.jpg">
+					<h3> BLACK HEADSET </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="6.jpg">
+					<h3> MACBOOK AIR </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+
+			
+		</section>
+		
+		<section class="preview">
+		
+
+			<div class="row">
+				<div class="preview-col">
+					<img src="7.jpg">
+					<h3> IPAD </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="8.jpg">
+					<h3> I PHONE</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="9.jpg">
+					<h3> CAMERA </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+		</section>
+
+
+		
+		<section class="preview">
+		
+			<div class="row">
+				<div class="preview-col">
+					<img src="10.jpg">
+					<h3>XPS 15</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="11.jpg">
+					<h3> I PHONE (BLACK) </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="12.jpg">
+					<h3> HARD DISK DRIVES </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+
+			
+		</section>
+
+
+
+
+		
+		<section class="preview">
+			
+			<div class="row">
+				<div class="preview-col">
+					<img src="13.jpg">
+					<h3> MICROSOFT SURFACE</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="14.jpg">
+					<h3> VR</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="15.jpg">
+					<h3> BLACK HEADSET </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+
+			
+		</section>
+
+
+
+		
+		<section class="preview">
+			
+
+			<div class="row">
+				<div class="preview-col">
+					<img src="16.jpg">
+					<h3> XPS 15 (BLACK)) </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="17.jpg">
+					<h3> XPS 15 (WHITE) </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+				<div class="preview-col">
+					<img src="18.jpg">
+					<h3> XPS 15 (GRAY)</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+
+			
+		</section>
+
+		
+		<section class="preview">
+			
+
+			<div class="row">
+				<div class="preview-col">
+					<img src="19.jpg">
+					<h3> GAMING LAPTOP </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+
+			
+				<div class="preview-col">
+					<img src="20.jpg">
+					<h3> MACBOOK PRO </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.</p>
+				</div>
+			</div>
+
+			
+		</section>
+
+
+		<!--- About us --->
+		<section class="about-us">
+			<h1> ABOUT US </h1>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget sapien.</p>
+
+			<a href="about.html" class="about-btn"> SEE MORE </a>
+		</section>
+
+	
+
+		<div class="footer">
+			<h2>Copyright © 2021 JOHN LUTHER SABRINE</h2>
+		  </div>
+
+		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+	</body>
+</html>
